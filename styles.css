@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #0b5ed7;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.hero button {
+  padding: 12px 20px;
+  background: #25d366;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.services, .why {
+  padding: 20px;
+}
+
+.services ul, .why ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.services li, .why li {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
