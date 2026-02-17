@@ -1,4 +1,4 @@
-/* Modern Professional Design */
+/* Premium Saudi Manpower Design */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,78 +7,117 @@
 }
 
 body {
-  background: #0b1220;
-  color: #e5e7eb;
+  background: linear-gradient(180deg, #f7f9fc, #eef2ff);
+  color: #0f172a;
   line-height: 1.6;
 }
 
+/* Header */
 header {
-  background: radial-gradient(1200px 500px at 10% 10%, #1f2937 0%, #0b1220 40%);
-  padding: 56px 20px 64px;
+  background: linear-gradient(135deg, #065f46, #16a34a);
+  padding: 70px 20px 80px;
   text-align: center;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  color: #ecfeff;
+  position: relative;
+  overflow: hidden;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  inset: -40% -20% auto -20%;
+  height: 220%;
+  background: radial-gradient(600px 200px at 20% 20%, rgba(255,255,255,0.25), transparent 60%);
+  pointer-events: none;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 12px;
-  color: #f9fafb;
   letter-spacing: 0.3px;
 }
 
 header p {
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto 18px;
-  color: #cbd5f5;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  opacity: 0.95;
 }
 
+/* CTA */
 .cta {
   display: inline-block;
-  margin-top: 12px;
-  padding: 12px 18px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
-  color: #062e13;
+  margin-top: 14px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: #facc15;
+  color: #1f2937;
   text-decoration: none;
-  font-weight: 700;
-  box-shadow: 0 10px 25px rgba(34,197,94,0.35);
+  font-weight: 800;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.cta:hover { transform: translateY(-1px); }
+.cta:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
 
+/* Sections */
 section {
-  padding: 28px 16px;
-  max-width: 1100px;
-  margin: 0 auto;
+  padding: 48px 16px;
+  max-width: 1200px;
+  margin: -40px auto 0;
 }
 
 h2 {
-  margin-bottom: 12px;
-  font-size: 1.4rem;
-  color: #f1f5f9;
-  border-left: 4px solid #22c55e;
-  padding-left: 10px;
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+  color: #0f172a;
+  position: relative;
+  padding-bottom: 6px;
 }
 
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+  border-radius: 999px;
+}
+
+/* Cards */
 ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 10px;
-  margin-top: 10px;
+  gap: 16px;
+  margin-top: 14px;
 }
 
 ul li {
-  background: rgba(255,255,255,0.06);
-  padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.08);
+  background: #ffffff;
+  padding: 16px 16px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(2,6,23,0.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+  font-weight: 600;
 }
 
+ul li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(2,6,23,0.15);
+}
+
+/* Footer */
 footer {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 20px 16px;
+  background: #0b1220;
+  color: #cbd5f5;
+  padding: 28px 16px;
   text-align: center;
-  color: #9ca3af;
+  margin-top: 40px;
 }
